@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+GET     /post/:id                   controllers.HomeController.getPost(id: String)
+PUT     /post/:id                   controllers.HomeController.updatePost(id: String)
+GET     /post                       controllers.HomeController.getAllPost
+POST    /post                       controllers.HomeController.addPost
